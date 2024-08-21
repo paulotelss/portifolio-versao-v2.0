@@ -7,22 +7,52 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
+    <!--font awesome-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
     <!--fim google fonts-->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.2/font/bootstrap-icons.min.css">
     <link rel="stylesheet" href="style.css">
     <script src="menu.js" defer></script>
     <title>Document</title>
+    <script src="https://unpkg.com/i18next@21.9.2/dist/umd/i18next.min.js"></script>
+    <script src="i18n-config.js" defer></script>
 </head>
 <body>
     <header>
         <div class="interface">
             <div class="logo">
                 <a href="#">
-                    <img src="img/images/pauloglogo.png" alt="Logo do Portfólio PG">
+                    <img src="img/images/1.png" alt="Logo do Portfólio PG">
                 </a>
                 <span class="plus-sign">+</span>
                 <img src="img/crdCodeRioDynamics2.0.png" alt="Logo da sua empresa">
             </div>
+
+
+
+            <!-- idiomas -->
+            <div class="language-selector">
+                <button onclick="toggleDropdown()" class="dropdown-btn">
+                    <i class="fas fa-globe"></i> Idioma
+                </button>
+                <div id="languageDropdown" class="dropdown-content">
+                    <button onclick="changeLanguage('pt')">
+                        <img src="https://upload.wikimedia.org/wikipedia/commons/0/05/Flag_of_Brazil.svg" alt="PT" class="flag-icon"> Português
+                    </button>
+                    <button onclick="changeLanguage('en')">
+                        <img src="https://upload.wikimedia.org/wikipedia/en/a/a4/Flag_of_the_United_States.svg" alt="EN" class="flag-icon"> English
+                    </button>
+                    <button onclick="changeLanguage('es')">
+                        <img src="https://upload.wikimedia.org/wikipedia/commons/9/9a/Flag_of_Spain.svg" alt="ES" class="flag-icon"> Español
+                    </button>
+                </div>
+            </div>
+            
+            
+            
+            
+            
+
             
             
             <nav class="menu-desktop">
@@ -60,6 +90,14 @@
 
         </div>
 
+
+
+
+        
+
+
+
+
         <div class="overlay-menu" id="overlay-menu"></div>
 
 
@@ -69,7 +107,7 @@
                     <div class="flex">
                         <div class="txt-topo-site">
                             <h1>TRANSFORMANDO IDEIAS EM REALIDADE DIGITAL <span>.</span></h1>
-                            <p>Impulsione seu negócio com uma presença online única. Unimos design criativo, usabilidade excepcional e estratégias otimizadas para resultados, garantindo que seu site se destaque e conquiste seu público.
+                            <p>Bem-vindo ao meu universo criativo, onde código e imaginação se encontram. Sou Paulo Giovani, um desenvolvedor web apaixonado por transformar ideias em realidade. Navegue pelo meu portfólio e descubra projetos que combinam inovação, design e tecnologia.
                             </p>
                             <div class="btn-contato">
                                 <a href="#">
@@ -108,9 +146,7 @@
                         <div class="especialidades-box">
                             <i class="bi bi-bar-chart"></i>
                             <h3>Cresça</h3>
-                            <p>Estratégias especializadas para impulsionar o seu crescimento digital. Compreendo as nuances do marketing online
-                                 e ofereço soluções que ajudam a expandir a presença digital, 
-                                 alcançar novos públicos e atingir metas de crescimento.</p>
+                            <p>Impulsione seu negócio com uma presença online única. Unimos design criativo, usabilidade excepcional e estratégias otimizadas para resultados, garantindo que seu site se destaque e conquiste seu público. </p>
 
                         </div>
 
@@ -126,9 +162,15 @@
                         </div>
                         <div class="txt-sobre">
                             <h2>OLÁ! SOU <span>PAULO GIOVANI</span></h2>
-                            <p>Sou um profissional de tecnologia formado em Análise e Desenvolvimento de Sistemas. Atualmente, sou dono de uma micro startup, a CodeRio Dynamics. Eu e minha equipe temos a responsabilidade de entregar softwares de qualidade e também sites como landing pages, e-commerces, vendas digitais ou portfólios. Além da criação de sites, também disponibilizamos serviços como gerenciamento de conteúdo e automação de processos. Estamos nessa jornada de construção desde 2019 e contamos com mais de 37 colaboradores espalhados pelo Brasil.</p>
+                            <p>Sou um desenvolvedor web apaixonado por tecnologia. Minha jornada na TI começou em 2020, durante a pandemia, quando escrevi minhas primeiras linhas de código em C. Desde então, tenho explorado novas linguagens e ferramentas para transformar ideias em soluções digitais. Hoje, me especializo em desenvolvimento web, mas também participei de projetos envolvendo software e automação de processos.
+
+                                Atualmente, atuo como freelancer, criando desde sites profissionais até sistemas complexos. Também estou desenvolvendo uma micro startup, com mais detalhes em breve...
+                                
+                                Acredito no poder transformador da tecnologia e busco sempre criar soluções que realmente façam a diferença.</p>
                                   <div class="btn-social">
                                     <a href="#"><button><i class="bi bi-instagram"></i></button></a>
+                                    <a href="#"><button><i class="bi bi-github"></i></i></button></a>
+                                    <a href="#"><button><i class="bi bi-linkedin"></i></button></a>
                                   </div>
                             <p></p>
                             <p></p>
@@ -143,17 +185,108 @@
                     <h2 class="titulo">MEU <span>PORTIFÓLIO</span></h2>
                     <div class="flex">
                         <div class="img-port" style="background-image: url(img/images/crd1.png);">
-                            <a href="https://astonishing-bonbon-0f9f21.netlify.app" target="_blank" rel="noopener noreferrer" class="overlay">Conheça já</a>
+                            <a href="https://astonishing-bonbon-0f9f21.netlify.app" target="_blank" rel="noopener noreferrer" class="overlay">Em breve.</a>
                         </div>
                         <div class="img-port" style="background-image: url(img/images/crd2.png);">
-                            <a href="https://astonishing-bonbon-0f9f21.netlify.app" target="_blank" rel="noopener noreferrer" class="overlay">Conheça já</a>
+                            <a href="https://astonishing-bonbon-0f9f21.netlify.app" target="_blank" rel="noopener noreferrer" class="overlay">Em breve.</a>
                         </div>
                         <div class="img-port" style="background-image: url(img/images/crd3.png);">
-                            <a href="https://astonishing-bonbon-0f9f21.netlify.app" target="_blank" rel="noopener noreferrer" class="overlay">Conheça já</a>
+                            <a href="https://astonishing-bonbon-0f9f21.netlify.app" target="_blank" rel="noopener noreferrer" class="overlay">Em breve.</a>
                         </div>
                     </div>
                 </div>
             </section>
+
+
+
+            <!-- Linha do tempo -->
+
+            <section class="linha-do-tempo">
+                <h2 class="titulo">Journey 🚀</h2>
+                
+                <div class="timeline">
+                    <!-- Experiência Acadêmica -->
+                    <div class="timeline-section">
+                        <h3 class="section-title">Experiência Acadêmica</h3>
+                        <div class="timeline-item">
+                            <div class="timeline-content">
+                                <h4>Análise e Desenvolvimento de Sistemas</h4>
+                                <p>Gran Faculdade - 2022 - Presente</p>
+                                <p>Curitiba - PR.</p>
+                                <p>Graduação: Completo</p>
+                            </div>
+                        </div>
+                        <div class="timeline-item">
+                            <div class="timeline-content">
+                                <h4>Cybersecurity</h4>
+                                <p>University of Maryland - 2023 - 6 meses</p>
+                                <p>Curso: Completo</p>
+                            </div>
+                        </div>
+                        <div class="timeline-item">
+                            <div class="timeline-content">
+                                <h4>Ciência de Dados</h4>
+                                <p>FGV - 2023 - 5 meses</p>
+                                <p>Rio de Janeiro - RJ</p>
+                                <p>Curso: Completo</p>
+                            </div>
+                        </div>
+                        <div class="timeline-item">
+                            <div class="timeline-content">
+                                <h4>Banco de Dados</h4>
+                                <p>IFRS - 2023 - 4 meses</p>
+                                <p>Porto Alegre - RS</p>
+                                <p>Curso: Completo</p>
+                            </div>
+                        </div>
+                        <!-- Adicione mais eventos acadêmicos conforme necessário -->
+                    </div>
+            
+                    <!-- Experiência Profissional -->
+                    <div class="timeline-section">
+                        <h3 class="section-title">Experiência Profissional</h3>
+                        <div class="timeline-item">
+                            <div class="timeline-content">
+                                <h4>Programador Freelancer</h4>
+                                <p>2023 - Presente</p>
+                                <p><strong>Descrição:</strong> Desenvolvimento de soluções personalizadas para clientes, abrangendo criação de sites, e-commerces e landing pages. Utilização de tecnologias como React, Node.js e Java.</p>
+                            </div>
+                        </div>
+
+
+                        <div class="timeline-item">
+                            <div class="timeline-content">
+                                <img src="img/crdCodeRioDynamics2.0.png" alt="Logo CodeRio Dynamics" class="logo-timeline">
+                                <h4>Em breve</h4>
+                                <p>CodeRio Dynamics - 2019, em andamento.</p>
+                            </div>
+                        </div>
+                        
+                        <!-- Adicione mais eventos profissionais conforme necessário -->
+                    </div>
+                </div>
+            </section>
+            
+
+
+
+            <section id="intro-section">
+                <div class="cv-section">
+                    <div class="cv-content">
+                        <div class="photo-container">
+                            <img src="img/images/minhafoto.jpg" alt="Sua Foto" class="profile-photo">
+                        </div>
+                        <h1>Hi, I'm Paulo✌️</h1>
+                        <h2>Front-End Engineer</h2>
+                        <button class="download-btn" onclick="downloadCV()">Download CV</button>
+                    </div>
+                </div>
+            </section>
+            
+
+
+
+
             
 
             <section class="formulario">
@@ -176,7 +309,7 @@
                 <div class="line-footer">
                     <div class="flex">
                         <div class="logo-footer">
-                            <img src="img/images/pauloglogo.png" alt="Logo da Agência BRN">
+                            <img src="img/images/1.png" alt="Logo da Agência BRN">
                         </div>
                         <div class="btn-social">
                             <a href="#"><button><i class="bi bi-instagram"></i></button></a>
@@ -185,7 +318,9 @@
                 </div>
 
                 <div class="line-footer borda">
-                    <p><i class="bi bi-inbox-fill"></i><a href="mailto:contactpaulog01@gmail.com">contactpaulog01@gmail.com</a></p>
+                    <p><i class="bi bi-inbox-fill"></i>
+                        <a href="mailto:contactpaulog01@gmail.com">contactpaulog01@gmail.com</a>
+                    </p>
                 </div>
             </div>
         </footer>

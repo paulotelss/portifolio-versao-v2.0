@@ -24,7 +24,7 @@ h2.titulo span{
     color: #78c6e7;
 }
 button:hover, form .btn-enviar input:hover{
-    box-shadow: 0px 0px 8px #559191;
+    box-shadow: 0px 0px 8px #24a5eb7e;
     transform: scale(1.05);
     transition: .2s;
 }
@@ -56,12 +56,12 @@ header nav ul li{
     padding: 0 40px;
 }
 .btn-abrir-menu i{
-    color: #36a2d0;
+    color: #78c6e7;
     font-size: 40px;
 }
 
 .menu-mobile{
-    background-color: #36a2d0ee;
+    background-color: #78c6e7;
     height: 100vh;
     position: fixed;
     top: 0;
@@ -95,7 +95,7 @@ header nav ul li{
     display: block;
 }
 .overlay-menu{
-    background-color: #0000009f;
+    background-color: #000000b9;
     width: 100%;
     height: 100%;
     position: fixed;
@@ -107,10 +107,10 @@ header nav ul li{
 header .btn-contato button{
     padding: 10px 40px;
     font-size: 18px;
-    font-weight: 600;
+    font-weight: 500;
     background-color: #78c6e7;
     border: 0;
-    border-radius: 30px;
+    border-radius: 5px;
     cursor: pointer;
 }
 /* estilo do topo do site */
@@ -128,7 +128,7 @@ section.topo-do-site .flex{
     line-height: 40px;
 }
 .topo-do-site h1 span{
-    color: #36a2d0;
+    color: #78c6e7;
 }
 .topo-do-site .txt-topo-site p{
     color: white;
@@ -167,7 +167,7 @@ section.especialidades .flex{
 }
 .especialidades .especialidades-box i{
     font-size: 58px;
-    color: #36a2d0;
+    color: #78c6e7;
 }
 .especialidades .especialidades-box h3{
     font-size: 28px;
@@ -189,7 +189,7 @@ section.sobre .flex{
     margin-bottom: 30px;
 }
 .sobre .txt-sobre h2 span{
-    color: #36a2d0;
+    color: #78c6e7;
     display: block;
 }
 .sobre .txt-sobre p{
@@ -201,7 +201,7 @@ section.sobre .flex{
     height: 60px;
     border-radius: 30px;
     border: 0;
-    background-color: #36a2d0;
+    background-color: #78c6e7;
     font-size: 22px;
     cursor: pointer;
 }
@@ -271,7 +271,7 @@ form input, form textarea{
     font-size: 18px;
 }
 form input::placeholder{
-    color: #36a2d0;
+    color: #78c6e7;
 }
 form textarea{
     resize: none;
@@ -282,11 +282,12 @@ form .btn-enviar{
 }
 form .btn-enviar input{
     width: 120px;
-    background-color: #36a2d0;
+    background-color: #78c6e7;
     color: #000;
-    font-weight: 600;
+    font-weight: 500;
     cursor: pointer;
     transition: .2s;
+    border-radius: 5px;
 }
 footer{
     padding: 60px 4%;
@@ -298,10 +299,10 @@ footer .line-footer{
     padding: 20px 0;
 }
 .borda{
-    border-top: solid #36a2d0;
+    border-top: solid #78c6e7;
 }
 footer .line-footer p i{
-    color: #36a2d0;
+    color: #78c6e7;
     font-size: 22px;
 }
 footer .line-footer p a{
@@ -423,5 +424,482 @@ footer .line-footer p a{
 
     .btn-abrir-menu {
         display: none; /* Esconde o botão de abrir menu em dispositivos maiores */
+    }
+}
+
+
+
+
+
+/*linha do tempo*/
+
+.linha-do-tempo {
+    padding: 40px 4%;
+    background-color: #20252e;
+    color: white;
+}
+
+.linha-do-tempo .titulo {
+    font-size: 38px;
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+.timeline {
+    position: relative;
+    max-width: 900px;
+    margin: 0 auto;
+    padding: 10px 0;
+    list-style: none;
+}
+
+.timeline::before {
+    content: '';
+    position: absolute;
+    width: 4px;
+    background-color: #ffffffa3;
+    top: 0;
+    bottom: 0;
+    left: 50%;
+    margin-left: -3px;
+}
+
+.timeline-section {
+    margin-bottom: 60px;
+}
+
+.section-title {
+    word-spacing: 10px;
+    font-size: 28px;
+    margin-bottom: 20px;
+    color: #78c6e7;
+    text-align: center;
+}
+
+.timeline-item {
+    position: relative;
+    width: 50%;
+    margin-bottom: 30px;
+}
+
+.timeline-item::after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+.timeline-content {
+    background: #4b4848;
+    border-radius: 6px;
+    padding: 20px;
+    position: relative;
+    width: 100%;
+    box-shadow: 0px 0px 8px rgba(0, 0, 0, 0.3);
+    color: white;
+}
+
+.timeline-item:nth-child(odd) {
+    left: 0;
+    padding-right: 30px;
+    text-align: right;
+}
+
+.timeline-item:nth-child(even) {
+    left: 50%;
+}
+
+.timeline-item:nth-child(odd) .timeline-content {
+    margin-left: auto;
+}
+
+.timeline-item:nth-child(even) .timeline-content {
+    margin-right: auto;
+}
+
+.timeline-content h4 {
+    margin: 0;
+    font-size: 24px;
+}
+
+.timeline-content p {
+    margin: 5px 0;
+    font-size: 16px;
+}
+
+
+.logo-timeline {
+    width: 170px; /* Ajuste o tamanho conforme necessário */
+    height: auto; /* Mantém a proporção original da imagem */
+    display: block;
+    margin-bottom: 2px;
+}
+
+
+
+
+
+/* Responsividade */
+@media (max-width: 1232px) {
+    .timeline-item {
+        width: 50%;
+    }
+}
+
+@media (max-width: 732px) {
+    .timeline-item {
+        width: 100%;
+        padding-right: 0;
+        text-align: left;
+    }
+
+    .timeline-item:nth-child(even) {
+        left: 0;
+    }
+
+    .timeline-item:nth-child(odd) {
+        left: 0;
+    }
+
+    .timeline-content {
+        width: calc(100% - 20px); /* Ajusta a largura dos conteúdos para dispositivos menores */
+    }
+
+    .timeline-content p {
+        font-size: 14px; /* Reduz o tamanho da fonte para dispositivos menores */
+    }
+
+    .section-title {
+        font-size: 24px; /* Ajusta o tamanho da fonte para dispositivos menores */
+    }
+}
+
+@media (max-width: 480px) {
+    .timeline-content {
+        padding: 15px; /* Ajusta o padding para dispositivos muito pequenos */
+    }
+
+    .timeline-content h4 {
+        font-size: 20px; /* Ajusta o tamanho do título para dispositivos muito pequenos */
+    }
+
+    .timeline-content p {
+        font-size: 12px; /* Ajusta o tamanho da fonte para dispositivos muito pequenos */
+    }
+
+    .logo-timeline {
+        width: 100px; /* Ajusta a largura da logo para dispositivos muito pequenos */
+    }
+}
+
+
+
+
+
+@media (max-width: 732px) {
+    .timeline-item {
+        width: 100%; /* Garante que as caixas ocupem toda a largura disponível */
+        padding-right: 0;
+        text-align: left;
+    }
+
+    .timeline-content {
+        width: calc(100% - 40px); /* Ajusta a largura para adicionar algum padding nas laterais */
+        margin: 0 auto; /* Centraliza a caixa */
+    }
+
+    .timeline-content p {
+        font-size: 14px; /* Ajusta o tamanho da fonte para dispositivos menores */
+    }
+
+    .section-title {
+        font-size: 24px; /* Ajusta o tamanho da fonte para dispositivos menores */
+    }
+
+    .logo-timeline {
+        width: 100px; /* Ajusta a largura da logo para dispositivos muito pequenos */
+    }
+}
+
+@media (max-width: 480px) {
+    .timeline-content {
+        padding: 15px; /* Ajusta o padding para dispositivos muito pequenos */
+    }
+
+    .timeline-content h4 {
+        font-size: 20px; /* Ajusta o tamanho do título para dispositivos muito pequenos */
+    }
+
+    .timeline-content p {
+        font-size: 12px; /* Ajusta o tamanho da fonte para dispositivos muito pequenos */
+    }
+
+    .logo-timeline {
+        width: 150px; /* Ajusta a largura da logo para dispositivos muito pequenos */
+    }
+}
+
+
+
+@media (max-width: 344px) {
+    .timeline-section {
+        display: flex;
+        flex-direction: column; /* Empilha as seções uma sobre a outra */
+        align-items: center;
+        margin-bottom: 30px;
+    }
+
+    .section-title {
+        font-size: 20px; /* Ajuste o tamanho da fonte conforme necessário */
+        margin: 0;
+        padding: 10px 0; /* Adiciona algum espaçamento vertical */
+        text-align: center;
+    }
+}
+
+
+
+
+
+
+/* teste de idioma */
+.language-selector {
+    position: relative;
+    display: inline-block;
+}
+
+.dropdown-btn {
+    background-color: rgba(0, 0, 0, 0.3); /* Fundo branco semi-transparente */
+    border: none;
+    padding: 10px;
+    cursor: pointer;
+    border-radius: 5px;
+    transition: background-color 0.3s, opacity 0.3s;
+    color: #96a546; /* Cor do texto branca */
+}
+
+.dropdown-btn:hover {
+    background-color: #e0e0e0;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+    border-radius: 5px;
+    overflow: hidden;
+}
+
+.dropdown-content.show {
+    display: block;
+}
+
+.dropdown-content button {
+    background-color: rgb(255, 255, 255);
+    border: none;
+    padding: 12px 16px;
+    width: 100%;
+    text-align: left;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+}
+
+.dropdown-content button:hover {
+    background-color: #f1f1f1;
+}
+
+.flag-icon {
+    width: 24px;
+    height: 16px;
+    margin-right: 8px;
+    vertical-align: middle;
+}
+
+
+
+
+/* Para resolução de 1020px até 732px */
+@media (max-width: 1020px) and (min-width: 732px) {
+    .language-selector {
+        width: 150px; /* Ajusta a largura do seletor de idioma */
+    }
+
+    .language-selector-content {
+        right: 15px; /* Dá uma folga do lado direito da página */
+    }
+
+    .language-selector-content button {
+        font-size: 14px; /* Ajusta o tamanho da fonte para se adequar à tela menor */
+        padding: 6px 10px; /* Ajusta o padding para manter as proporções */
+    }
+}
+
+/* Para resolução de 732px até 516px */
+@media (max-width: 732px) and (min-width: 516px) {
+    .language-selector {
+        width: 130px; /* Ajusta a largura do seletor de idioma */
+    }
+
+    .language-selector-content {
+        right: 12px; /* Dá uma folga do lado direito da página */
+    }
+
+    .language-selector-content button {
+        font-size: 13px; /* Ajusta o tamanho da fonte para se adequar à tela menor */
+        padding: 5px 8px; /* Ajusta o padding para manter as proporções */
+    }
+}
+
+/* Para resolução menor que 516px */
+@media (max-width: 516px) {
+    .language-selector {
+        width: 100px; /* Ajusta a largura do seletor de idioma para telas pequenas */
+    }
+
+    .language-selector-content {
+        right: 8px; /* Dá uma folga do lado direito da página */
+    }
+
+    .language-selector-content button {
+        font-size: 12px; /* Reduz o tamanho da fonte para telas pequenas */
+        padding: 4px 6px; /* Ajusta o padding para manter as proporções */
+    }
+}
+
+
+
+
+
+
+
+
+
+/* Estilos para o dropdown quando a tela tem entre 368px e 506px de largura */
+@media (max-width: 506px) and (min-width: 368px) {
+    .dropdown-content {
+        display: flex;
+        flex-wrap: wrap; /* Permite que os itens quebrem em várias linhas */
+        min-width: 150px; /* Ajuste o valor conforme necessário */
+        padding: 5px;
+        box-sizing: border-box; /* Inclui padding e borda no tamanho total do elemento */
+    }
+
+    .dropdown-content button {
+        flex: 1 1 auto; /* Permite que os botões ocupem espaço disponível e quebrem linha */
+        margin: 2px 0; /* Espaçamento entre os botões */
+        text-align: left; /* Alinha o texto à esquerda */
+    }
+
+    .flag-icon {
+        width: 20px; /* Ajuste o tamanho dos ícones das bandeiras */
+        height: 14px;
+        margin-right: 8px; /* Espaçamento entre o ícone e o texto */
+    }
+}
+
+
+@media (max-width: 496px) {
+    .language-selector {
+        display: none; /* Esconde o botão do idioma */
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* Estilização para a seção de introdução */
+#intro-section {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 60vh; /* Reduzido para ocupar menos espaço vertical */
+    width: 100%;
+    position: relative;
+    background-color: #1a1a1a; /* Cor de fundo discreta */
+    overflow: hidden;
+}
+
+/* Contêiner para a foto e os textos */
+.cv-content {
+    text-align: center;
+    color: white;
+    z-index: 2;
+}
+
+/* Estilização da foto de perfil */
+.profile-photo {
+    width: 150px; /* Tamanho ajustável */
+    height: 150px;
+    border-radius: 50%;
+    object-fit: cover;
+    border: 4px solid white;
+    margin-bottom: 20px;
+}
+
+/* Estilização dos textos */
+h1 {
+    font-size: 2.5rem;
+    margin: 0;
+}
+
+h2 {
+    font-size: 1.5rem;
+    margin: 10px 0 20px;
+}
+
+/* Estilização do botão */
+.download-btn {
+    background-color: #78c6e7;
+    color: rgb(0, 0, 0);
+    padding: 10px 20px;
+    font-size: 1rem;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer !important;
+    transition: background-color 0.3s ease;
+    z-index: 100; /* Garante que o botão esteja acima de outros elementos */
+    position: relative; /* Garante que a posição seja relativa */
+    display: inline-block; /* Garante que o botão seja renderizado corretamente */
+}
+
+.download-btn:hover {
+    background-color: #78c6e7;
+}
+
+/* Animação discreta no fundo */
+#intro-section::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: radial-gradient(circle, rgba(255,255,255,0.1) 1px, transparent 1px);
+    background-size: 40px 40px; /* Tamanho dos pontos ligeiramente reduzido */
+    animation: animateBg 10s linear infinite;
+    z-index: 1;
+}
+
+/* Animação de movimento */
+@keyframes animateBg {
+    from {
+        background-position: 0 0;
+    }
+    to {
+        background-position: 80px 80px; /* Ajuste da velocidade de movimento */
     }
 }

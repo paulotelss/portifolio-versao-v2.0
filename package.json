@@ -1,0 +1,15 @@
+{
+  "name": "meu-portifolio",
+  "version": "1.0.0",
+  "main": "menu.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "description": "",
+  "dependencies": {
+    "i18next": "^23.14.0"
+  }
+}
