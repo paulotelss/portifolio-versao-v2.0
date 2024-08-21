@@ -31,3 +31,15 @@ Bem-vindo à versão atualizada do meu site de portfólio! Esta versão inclui v
 **`Mudanças no Copywriting`**
 
 - Houve melhorias significativas no texto da página para tornar a comunicação mais eficaz e persuasiva.
+
+
+
+## Observações
+
+Algumas funções ainda estão em desenvolvimento:
+
+- Tradutor de Página: A funcionalidade de tradução ainda não está operacional (descartem por enquanto o arquivo `i18-config.js`), ele até agora era minha ideia para fazer o tradutor funcionar, mas vai passar por modificações e teste.
+- Download do Currículo: O link para download do currículo ainda não está configurado.
+- Botões: Alguns botões ainda não levam a lugar nenhum.
+
+Próximas atualizações incluirão a implementação dessas funções para completar a experiência do usuário.
