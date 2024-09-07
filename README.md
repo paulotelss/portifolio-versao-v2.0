@@ -1,5 +1,9 @@
 ## Meu Portfólio - Versão 2.0
 
+![v2site](https://github.com/user-attachments/assets/a1763019-1a90-4f6e-b5a2-10429c0c8bdc)
+![sitev2](https://github.com/user-attachments/assets/6210001a-84e0-4063-a5e7-35ba951e87c3)
+![timelinev2](https://github.com/user-attachments/assets/36482ec1-aeb5-4590-80d6-9f31ebc4e2a9)
+
 Bem-vindo à versão atualizada do meu site de portfólio! Esta versão inclui várias melhorias significativas em relação à versão anterior, com foco na estética, funcionalidade e experiência do usuário.
 
 **Novidades na Versão 2.0**
