@@ -47,3 +47,6 @@ Algumas funções ainda estão em desenvolvimento:
 - Botões: Alguns botões ainda não levam a lugar nenhum.
 
 Próximas atualizações incluirão a implementação dessas funções para completar a experiência do usuário.
+
+<img src="https://capsule-render.vercel.app/api?type=waving&color=gradient&height=65&section=footer"/>
+
